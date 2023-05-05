@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Ejercicio 6 Formulario Pro</title>
+        <link rel="shortcut icon" href="../images/211753_glasses_icon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <h1>Formulario de registro</h1>
+        <form action="../Index.html">
+        <label for="Nombre">Nombre:</label>
+        <input type="text" name="Name" id="" placeholder="Tu nombre" maxlength="50"><br><br>
+        <label for="Apellidos">Apellidos</label>
+        <input type="text" name="Apellidos" id="" placeholder="Tu apellido" maxlength="50"><br><br>
+        <label for="Sexo">Sexo:</label>
+        <!-- Agrupar el TYPE por el name, con el mismo se agrupan y solo te deja seleccionar uno de los dos botones -->
+            <input type="radio" name="GrupoA" id="A">
+            <label for="Hombre">Hombre</label>
+            <input type="radio" name="GrupoA" id="B">
+            <label for="Mujer">Mujer</label><br><br>
+
+            <label for="Correo">Correo:</label> <input type="email" name="mail" id="" placeholder="ejemplo@gmail.com"><br><br>
+            
+            <label for="Poblacion">Población: </label><select name="Población" id="Población:">
+                <option value="">Alicante</option>
+                <option value="">Madrid</option>
+                <option value="">Sevilla</option>
+                <option value="">Valencia</option></select><br><br>
+
+            <!-- Una casilla para rellenar con texto, mas grande que el input text -->
+            <label for="descripcion">Descripción: </label><br><textarea name="Rellena" id="" cols="60" rows="10">Texto...</textarea>
+
+            <br><br>
+            <input type="checkbox" name="" id=""> <label>Deseo Recibir información sobre novedades y ofertas.</label><br><br>
+            
+            <input type="checkbox" name="" id=""> <label>Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos.</label><br><br>
+            
+            
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+    </html>
